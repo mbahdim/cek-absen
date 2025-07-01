@@ -1,0 +1,20 @@
+document.getElementById("absensi-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const nama = document.getElementById("nama").value;
+  const status = document.getElementById("status").value;
+
+  fetch("https://script.google.com/macros/s/AKfycbzPnP5IE0Sdap8m73q1vlOT1Z1-0WdLCfKOO8X0_KSnEt2VqPN-MiNgblaZxVax2seF/exec", {
+    method: "POST",
+    body: new URLSearchParams({ nama, status })
+  })
+  .then(res => {
+    if (res.ok) {
+      window.location.href = "siswa.html";
+    } else {
+      document.getElementById("pesan").innerText = "❌ Gagal mengirim absensi.";
+    }
+  })
+  .catch(() => {
+    document.getElementById("pesan").innerText = "⚠️ Tidak bisa terhubung ke server.";
+  });
+});
