@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Absensi MTM Al-Muhaimin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📌 Absensi Harian MTM Al-Muhaimin</h1>
+  <form id="absensi-form">
+    <label for="nama">Nama Siswa:</label>
+    <select id="nama" name="nama" required>
+      <option value="">-- Pilih Nama --</option>
+      <option>Ahmad</option>
+      <option>Fatimah</option>
+      <option>Ali</option>
+      <option>Aisyah</option>
+    </select>
+
+    <label for="status">Status Kehadiran:</label>
+    <select id="status" name="status" required>
+      <option value="">-- Pilih Status --</option>
+      <option>Hadir</option>
+      <option>Izin</option>
+      <option>Sakit</option>
+      <option>Alfa</option>
+    </select>
+
+    <button type="submit">Kirim Absensi</button>
+  </form>
+
+  <p id="pesan" style="margin-top:1rem;"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
