@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background-color: #fdf6f0;
+  color: #333;
+}
+h1 {
+  color: #c0392b;
+}
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+label {
+  margin-top: 1rem;
+}
+select, button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #219150;
+}
